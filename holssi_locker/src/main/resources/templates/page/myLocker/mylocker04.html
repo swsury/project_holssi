@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html
+  lang="ko"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+  <th:block th:replace="~{fragments/head :: head}"></th:block>
+
+  <link rel="stylesheet" th:href="@{/css/mylocker04.css}" media="screen">
+
+</head>
+
+  <body
+    data-path-to-root="/"
+    data-include-products="false"
+    class="u-body u-xl-mode"
+    data-lang="en"
+  >
+    <th:block th:replace="~{fragments/header :: header}"></th:block>
+    <section class="u-clearfix u-grey-80 u-hidden-md u-hidden-sm u-hidden-xs u-section-1" id="breadcrum">
+      <div class="data-layout-selected u-clearfix u-gutter-0 u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-align-center u-container-style u-layout-cell u-size-12 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-1">홈 </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-2">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-2">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-2"><span class="u-file-icon u-icon u-text-white"><img src="/images/7.png" alt=""></span>&nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-3">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-3">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-3">나의 사물함 </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-4">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-4">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-4"><span class="u-file-icon u-icon u-text-white"><img src="/images/7.png" alt=""></span>&nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-align-center u-container-style u-layout-cell u-size-12 u-layout-cell-5">
+              <div class="u-container-layout u-valign-middle u-container-layout-5">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-5">맡기기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-parallax u-section-2" id="pageTitle">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-align-left u-text u-text-default u-text-1"><span class="u-file-icon u-icon"><img src="/images/9997770-10.png" alt=""></span>&nbsp;개인정보 관리
+        </h1>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-7f4d">
+      <div class="u-clearfix u-sheet u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xs u-sheet-1">
+        <div class="u-align-center u-border-5 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-form u-radius u-form-1">
+          <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 50px;">
+            <div class="u-form-email u-form-group">
+              <label for="email-8dd7" class="u-label">이메일</label>
+              <input type="email" id="email-8dd7" name="email" class="u-input u-input-rectangle" required="required" placeholder="사용자 이메일 값. 변경 불가.">
+            </div>
+            <div class="u-form-group u-form-group-2">
+              <label for="text-f921" class="u-label">비밀번호</label>
+              <input type="text" placeholder="" id="text-f921" name="text" class="u-input u-input-rectangle">
+            </div>
+            <div class="u-form-group u-form-group-3">
+              <label for="text-d4c3" class="u-label">비밀번호 확인</label>
+              <input type="text" placeholder="" id="text-d4c3" name="text-1" class="u-input u-input-rectangle">
+            </div>
+            <div class="u-form-group u-form-name">
+              <label for="name-8dd7" class="u-label">이름</label>
+              <input type="text" placeholder="사용자 이름값. 옆에 본인확인 버튼으로 개명 이름 변경 가능" id="name-8dd7" name="name" class="u-input u-input-rectangle" required="">
+            </div>
+            <div class="u-form-group u-form-group-5">
+              <label for="text-fbea" class="u-label">휴대폰 번호</label>
+              <input type="text" placeholder="" id="text-fbea" name="text-2" class="u-input u-input-rectangle">
+            </div>
+            <div class="u-form-group u-form-group-6">
+              <label for="name-152c" class="u-label">주소</label>
+              <input type="text" id="name-152c" name="city" class="u-input u-input-rectangle">
+            </div>
+            <div class="u-form-group u-form-group-7">
+              <label for="name-152c" class="u-label">상세 주소</label>
+              <input type="text" id="name-152c" name="street" class="u-input u-input-rectangle">
+            </div>
+            <div class="u-align-right u-form-group u-form-submit">
+              <a href="#" class="u-btn u-btn-submit u-button-style">변경</a>
+              <input type="submit" value="submit" class="u-form-control-hidden">
+            </div>
+            <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+            <input type="hidden" value="" name="recaptchaResponse">
+            <input type="hidden" name="formServices" value="">
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <th:block th:replace="~{fragments/footer :: footer}"></th:block>
+    <th:block th:replace="~{fragments/js :: js}"></th:block>
+  
+</body></html>

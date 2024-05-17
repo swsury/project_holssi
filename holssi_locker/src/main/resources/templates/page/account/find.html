@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html
+  lang="ko"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+  <th:block th:replace="~{fragments/head :: head}"></th:block>
+
+  <link rel="stylesheet" th:href="@{/css/find.css}" media="screen">
+
+</head>
+
+  <body
+    data-path-to-root="/"
+    data-include-products="false"
+    class="u-body u-xl-mode"
+    data-lang="en"
+  >
+    <th:block th:replace="~{fragments/header :: header}"></th:block>
+
+    <section class="u-clearfix u-grey-80 u-hidden-md u-hidden-sm u-hidden-xs u-section-1" id="breadcrum">
+      <div class="data-layout-selected u-clearfix u-gutter-0 u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-align-center u-container-style u-layout-cell u-size-12 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-1">홈 </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-2">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-2">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-2"><span class="u-file-icon u-icon u-text-white"><img src="/images/7.png" alt=""></span>&nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-3">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-3">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-3">로그인</p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-4">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-4">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-4"> &nbsp;</p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-5">
+              <div class="u-container-layout u-container-layout-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-parallax u-section-2" id="pageTitle">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h1 class="u-align-left u-text u-text-default u-text-1"><span class="u-file-icon u-icon"><img src="/images/9997770-10.png" alt=""></span>&nbsp;계정찾기
+        </h1>
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-section-3" id="sec-c5e9">
+      <div class="u-clearfix u-sheet u-valign-middle-xs u-sheet-1">
+        <div class="u-align-center u-border-11 u-border-no-left u-border-no-right u-border-no-top u-border-palette-1-base u-container-style u-custom-border u-expanded-width-sm u-expanded-width-xs u-grey-15 u-group u-radius u-shape-round u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <div class="custom-expanded u-align-center u-form u-form-1" id="carousel-7ff6">
+              <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-1" style="padding: 10px;">
+                <div class="u-form-group u-form-group-1">
+                  <label for="text-a2c1" class="u-label">이름</label>
+                  <input type="text" placeholder="" id="text-a2c1" name="phonenumber" class="u-input u-input-rectangle">
+                </div>
+                <div class="u-form-date u-form-group u-form-group-2">
+                  <label for="text-42da" class="u-label">생년월일</label>
+                  <input type="text" placeholder="YYYY/MM/DD" id="text-42da" name="date" class="u-input u-input-rectangle" data-date-format="yyyy/mm/dd">
+                </div>
+                <div class="u-align-right u-form-group u-form-submit">
+                  <a href="#" class="u-btn u-btn-submit u-button-style u-btn-1">이메일 찾기 </a>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="formServices" value="a485c2d8-9b1a-b2f3-46b0-327bab42536d">
+              </form>
+            </div>
+            <p class="u-align-center u-large-text u-text u-text-variant u-text-1">{이름ㅇ}님의 홀씨네 사물함 이메일은&nbsp;<br>{ ema*** @ google.com } 입니다.<br>비밀번호를 변경하시려면&nbsp;<br>아래 비밀번호 변경 버튼을 눌러주세요 
+            </p>
+            <a href="/account/find.html#sec-2ca9" class="u-active-none u-align-center u-btn u-button-style u-hover-palette-1-dark-1 u-palette-1-base u-btn-2">비밀번호 변경</a>
+            <div class="custom-expanded u-align-center u-form u-form-2">
+              <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form-2" style="padding: 10px;">
+                <div class="u-form-email u-form-group">
+                  <label for="email-0202" class="u-label">이메일</label>
+                  <input type="email" placeholder="전체 이메일을 입력해주세요" id="email-0202" name="email" class="u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-align-right u-form-group u-form-submit">
+                  <a href="#" class="u-btn u-btn-submit u-button-style">변경 메일 전송</a>
+                  <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="formServices" value="a485c2d8-9b1a-b2f3-46b0-327bab42536d">
+              </form>
+            </div>
+            <div class="u-align-center-xs u-container-style u-expanded-width u-group u-white u-group-2">
+              <div class="u-container-layout u-container-layout-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <th:block th:replace="~{fragments/footer :: footer}"></th:block>
+    <th:block th:replace="~{fragments/js :: js}"></th:block>
+  
+</body></html>

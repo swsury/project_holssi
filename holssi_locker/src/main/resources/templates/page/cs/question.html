@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html
+  lang="ko"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+  <th:block th:replace="~{fragments/head :: head}"></th:block>
+
+  <link rel="stylesheet" th:href="@{/css/question.css}" media="screen">
+
+</head>
+
+  <body
+    data-path-to-root="/"
+    data-include-products="false"
+    class="u-body u-xl-mode"
+    data-lang="en"
+  >
+    <th:block th:replace="~{fragments/header :: header}"></th:block>
+
+    <section class="u-clearfix u-grey-80 u-hidden-md u-hidden-sm u-hidden-xs u-section-1" id="breadcrum">
+      <div class="data-layout-selected u-clearfix u-gutter-0 u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-align-center u-container-style u-layout-cell u-size-12 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-1">홈 </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-2">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-2">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-2"><span class="u-file-icon u-icon u-text-white"><img src="/images/7.png" alt=""></span>&nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-3">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-3">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-3">나의 사물함 </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-4">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-4">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-4"><span class="u-file-icon u-icon u-text-white"><img src="/images/7.png" alt=""></span>&nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-align-center u-container-style u-layout-cell u-size-12 u-layout-cell-5">
+              <div class="u-container-layout u-valign-middle u-container-layout-5">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-5">맡기기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-parallax u-section-2" id="pageTitle">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-left u-text u-text-default u-text-1"><span class="u-file-icon u-icon"><img src="/images/9997770-10.png" alt=""></span>자주 묻는 질문
+        </h1>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-white u-section-3" id="carousel_8456">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-1">Questions</h2>
+        <p class="u-large-text u-text u-text-variant u-text-2">자주 묻는 질문에 원하시는 답이 없으실 경우<a href="/myLocker/mylocker05.html" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1"> 1 : 1 문의</a>를 이용해주세요 
+        </p>
+        <form action="#" method="get" class="u-align-center u-border-2 u-border-grey-75 u-radius u-search u-search-left u-white u-search-1">
+          <button class="u-search-button" type="submit">
+            <span class="u-search-icon u-spacing-10">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 56.966 56.966"><use xlink:href="#svg-3bdf"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-3bdf" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" class="u-svg-content"><path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg>
+            </span>
+          </button>
+          <input class="u-search-input" type="search" name="search" value="" placeholder="Search">
+        </form>
+        <div class="u-accordion u-align-center u-collapsed-by-default u-faq u-spacing-10 u-accordion-1">
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-palette-1-light-2 u-button-style u-grey-5 u-hover-palette-1-light-2 u-accordion-link-1" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false">
+              <span class="u-accordion-link-text">{분류} {질문}? </span><span class="u-accordion-link-icon u-icon u-text-active-white u-text-hover-white u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-b6d8"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-b6d8"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-1" id="accordion-f600" aria-labelledby="link-accordion-f600">
+              <div class="u-container-layout u-container-layout-1">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-palette-1-light-2 u-button-style u-grey-5 u-hover-palette-1-light-2 u-accordion-link-2" id="link-accordion-72f4" aria-controls="accordion-72f4" aria-selected="false">
+              <span class="u-accordion-link-text"> {분류} {질문}? </span><span class="u-accordion-link-icon u-icon u-text-active-white u-text-hover-white u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-b250"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-b250"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-2" id="accordion-72f4" aria-labelledby="link-accordion-72f4">
+              <div class="u-container-layout u-container-layout-2">
+                <div class="u-clearfix u-rich-text u-text">
+                  <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item">
+            <a class="u-accordion-link u-active-palette-1-light-2 u-button-style u-grey-5 u-hover-palette-1-light-2 u-accordion-link-3" id="link-accordion-854e" aria-controls="accordion-854e" aria-selected="false">
+              <span class="u-accordion-link-text"> {분류} {질문}? </span><span class="u-accordion-link-icon u-icon u-text-active-white u-text-hover-white u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-4779"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-4779"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-3" id="accordion-854e" aria-labelledby="link-accordion-854e">
+              <div class="u-container-layout u-container-layout-3">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-expanded-width">
+            <a class="u-accordion-link u-active-palette-1-light-2 u-button-style u-grey-5 u-hover-palette-1-light-2 u-accordion-link-4" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false">
+              <span class="u-accordion-link-text"> {분류} {질문}? </span><span class="u-accordion-link-icon u-icon u-text-active-white u-text-hover-white u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-1e29"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-1e29"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-4" id="accordion-f600" aria-labelledby="link-accordion-f600">
+              <div class="u-container-layout u-container-layout-4">
+                <div class="fr-view u-clearfix u-rich-text u-text">
+                  <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="u-accordion-item u-expanded-width">
+            <a class="u-accordion-link u-active-palette-1-light-2 u-button-style u-grey-5 u-hover-palette-1-light-2 u-accordion-link-5" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="false">
+              <span class="u-accordion-link-text"> {분류} {질문}? </span><span class="u-accordion-link-icon u-icon u-text-active-white u-text-hover-white u-icon-5"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 426.66667 426.66667" style=""><use xlink:href="#svg-58d2"></use></svg><svg class="u-svg-content" viewBox="0 0 426.66667 426.66667" id="svg-58d2"><path d="m405.332031 192h-170.664062v-170.667969c0-11.773437-9.558594-21.332031-21.335938-21.332031-11.773437 0-21.332031 9.558594-21.332031 21.332031v170.667969h-170.667969c-11.773437 0-21.332031 9.558594-21.332031 21.332031 0 11.777344 9.558594 21.335938 21.332031 21.335938h170.667969v170.664062c0 11.777344 9.558594 21.335938 21.332031 21.335938 11.777344 0 21.335938-9.558594 21.335938-21.335938v-170.664062h170.664062c11.777344 0 21.335938-9.558594 21.335938-21.335938 0-11.773437-9.558594-21.332031-21.335938-21.332031zm0 0"></path></svg></span>
+            </a>
+            <div class="u-accordion-pane u-container-style u-expanded-width u-white u-accordion-pane-5" id="accordion-f600" aria-labelledby="link-accordion-f600">
+              <div class="u-container-layout u-container-layout-5">
+                <div class="fr-view u-clearfix u-rich-text u-text u-text-7">
+                  <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <th:block th:replace="~{fragments/footer :: footer}"></th:block>
+    <th:block th:replace="~{fragments/js :: js}"></th:block>
+  </body>
+</html>

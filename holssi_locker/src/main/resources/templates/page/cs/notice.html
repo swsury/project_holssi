@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html
+  lang="ko"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+  <th:block th:replace="~{fragments/head :: head}"></th:block>
+
+  <link rel="stylesheet" th:href="@{/css/notice.css}" media="screen">
+
+</head>
+
+  <body
+    data-path-to-root="/"
+    data-include-products="false"
+    class="u-body u-xl-mode"
+    data-lang="en"
+  >
+    <th:block th:replace="~{fragments/header :: header}"></th:block>
+
+    <section class="u-clearfix u-grey-80 u-hidden-md u-hidden-sm u-hidden-xs u-section-1" id="breadcrum">
+      <div class="data-layout-selected u-clearfix u-gutter-0 u-layout-custom-xs u-layout-wrap u-layout-wrap-1">
+        <div class="u-layout">
+          <div class="u-layout-row">
+            <div class="u-container-align-center u-container-style u-layout-cell u-size-12 u-layout-cell-1">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-1">홈 </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-2">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-2">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-2"><span class="u-file-icon u-icon u-text-white"><img src="/images/7.png" alt=""></span>&nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-3">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-3">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-3">나의 사물함 </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-style u-layout-cell u-size-12 u-layout-cell-4">
+              <div class="u-container-layout u-valign-middle-xs u-container-layout-4">
+                <p class="u-small-text u-text u-text-default u-text-variant u-text-white u-text-4"><span class="u-file-icon u-icon u-text-white"><img src="/images/7.png" alt=""></span>&nbsp;
+                </p>
+              </div>
+            </div>
+            <div class="cell-temp-clone u-container-align-center u-container-style u-layout-cell u-size-12 u-layout-cell-5">
+              <div class="u-container-layout u-valign-middle u-container-layout-5">
+                <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-5">맡기기</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-parallax u-section-2" id="pageTitle">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-align-left u-text u-text-default u-text-1"><span class="u-file-icon u-icon"><img src="/images/9997770-10.png" alt=""></span>&nbsp;공지사항
+        </h1>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-3" id="leaveList">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-align-center u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-table u-table-responsive u-table-1">
+          <table class="u-table-entity u-table-entity-1">
+            <colgroup>
+              <col width="11.2%">
+              <col width="52.4%">
+              <col width="19.7%">
+              <col width="16.7%">
+            </colgroup>
+            <thead class="u-align-center u-palette-1-base u-table-header u-table-valign-middle u-table-header-1">
+              <tr style="height: 25px;">
+                <th class="u-border-1 u-border-palette-1-base u-table-cell u-table-cell-1">순번 </th>
+                <th class="u-border-1 u-border-palette-1-base u-table-cell">제목</th>
+                <th class="u-align-center u-border-1 u-border-palette-1-base u-table-cell">작성일자 </th>
+                <th class="u-align-center u-border-1 u-border-palette-1-base u-table-cell u-table-valign-middle">작성자 </th>
+              </tr>
+            </thead>
+            <tbody class="u-table-body">
+              <tr style="height: 46px;">
+                <td class="u-align-center u-border-1 u-border-no-left u-border-no-right u-border-palette-1-base u-table-cell u-table-valign-middle u-table-cell-5">01</td>
+                <td class="u-align-center u-border-1 u-border-no-left u-border-no-right u-border-palette-1-base u-table-cell u-table-cell-6">첫 공지사항</td>
+                <td class="u-align-center u-border-1 u-border-no-left u-border-no-right u-border-palette-1-base u-table-cell u-table-cell-7">2024.05.01.</td>
+                <td class="u-align-center u-border-1 u-border-no-left u-border-no-right u-border-palette-1-base u-table-cell u-table-cell-8">관리자</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+    <th:block th:replace="~{fragments/footer :: footer}"></th:block>
+    <th:block th:replace="~{fragments/js :: js}"></th:block>
+  </body>
+</html>
